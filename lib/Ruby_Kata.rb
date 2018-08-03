@@ -1,5 +1,15 @@
 require "Ruby_Kata/version"
 
-module RubyKata
-  # Your code goes here...
+class RubyKata
+  def initialize
+    @score = 0
+  end
+
+  def roll(pins)
+    @score += pins
+  end
+
+  def score
+    @score
+  end
 end

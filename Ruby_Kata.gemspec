@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Will Krause"]
   spec.email         = ["wkrause1@radford.edu"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Kata for Ruby"
+  spec.description   = "Ruby kata that scores a bowling game"
+  spec.homepage      = "https://github.com/wkrause1/ruby-bowling-kata"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
