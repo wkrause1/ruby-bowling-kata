@@ -17,6 +17,10 @@ class RubyKataTest < Minitest::Test
     2.times {@@game.roll(5)}
   end
 
+  def roll_strike
+    @@game.roll(10)
+  end
+
   public
   def test_gutter_game
     set_up
@@ -40,10 +44,16 @@ class RubyKataTest < Minitest::Test
 
   def test_one_strike
     set_up
-    @@game.roll(10)
+    roll_strike
     @@game.roll(3)
     @@game.roll(4)
     roll_many(16,0)
     assert_equal(24, @@game.score)
+  end
+
+  def test_perfect_game
+    set_up
+    roll_many(12, 10)
+    assert_equal(300, @@game.score)
   end
 end

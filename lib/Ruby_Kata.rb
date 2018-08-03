@@ -15,11 +15,14 @@ class RubyKata
     score = 0
     frame_index = 0
     10.times do
-      if is_spare(frame_index)
-        score += 10 + @rolls[frame_index+2]
+      if is_strike(frame_index)
+        score += 10 + strike_bonus(frame_index)
+        frame_index += 1
+      elsif is_spare(frame_index)
+        score += 10 + spare_bonus(frame_index)
         frame_index += 2
       else
-      score += @rolls[frame_index] + @rolls[frame_index+1]
+      score += sum_balls_in_frame(frame_index)
       frame_index += 2
         end
     end
@@ -27,6 +30,9 @@ class RubyKata
   end
 
   private
+  def is_strike(frame_index)
+    @rolls[frame_index] == 10
+  end
   def sum_balls_in_frame(frame_index)
     @rolls[frame_index] + @rolls[frame_index + 1]
   end
@@ -40,6 +46,6 @@ class RubyKata
   end
 
   def is_spare(frame_index)
-    @rolls[frame_index] + @rolls[frame_index + 1] ==10
+    @rolls[frame_index] + @rolls[frame_index + 1] == 10
   end
 end
