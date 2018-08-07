@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43b13449-320f-4fed-9e24-0c91e5315b6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Ruby_Kata.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Ruby_Kata.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Ruby_Kata_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Ruby_Kata_test.rb" afterDir="false" />
-    </list>
+    <list default="true" id="43b13449-320f-4fed-9e24-0c91e5315b6f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/Ruby_Kata_test.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+            <state relative-caret-position="495">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -165,12 +161,12 @@
       <updated>1533304246085</updated>
       <workItem from="1533304250070" duration="10048000" />
       <workItem from="1533649964341" duration="1144000" />
-      <workItem from="1533661801306" duration="733000" />
+      <workItem from="1533661801306" duration="920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11925000" />
+    <option name="totallyTimeSpent" value="12112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1200" extended-state="0" />
@@ -261,8 +257,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/Ruby_Kata_test.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+        <state relative-caret-position="495">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
         </state>
       </provider>
     </entry>

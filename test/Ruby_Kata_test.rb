@@ -3,28 +3,6 @@ require 'test_helper'
 class RubyKataTest < Minitest::Test
   @game = RubyKata.new
 
-  private
-
-  def roll_many(rolls, pins)
-    rolls.times do
-      @game.roll(pins)
-    end
-  end
-
-  def set_up
-    @game = RubyKata.new
-  end
-
-  def roll_spare
-    2.times {@game.roll(5)}
-  end
-
-  def roll_strike
-    @game.roll(10)
-  end
-
-  public
-
   def test_gutter_game
     set_up
     roll_many(20, 0)
@@ -59,4 +37,25 @@ class RubyKataTest < Minitest::Test
     roll_many(12, 10)
     assert_equal(300, @game.score)
   end
+
+  private
+
+  def roll_many(rolls, pins)
+    rolls.times do
+      @game.roll(pins)
+    end
+  end
+
+  def set_up
+    @game = RubyKata.new
+  end
+
+  def roll_spare
+    2.times {@game.roll(5)}
+  end
+
+  def roll_strike
+    @game.roll(10)
+  end
+
 end
