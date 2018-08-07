@@ -1,22 +1,18 @@
 require 'test_helper'
 
-class RubyKataTest < Minitest::Test
-  @game = RubyKata.new
+class RubyKataTest < Minitest::Testgit 
 
   def test_gutter_game
-    set_up
     roll_many(20, 0)
     assert_equal(0, @game.score)
   end
 
   def test_all_ones
-    set_up
     roll_many(20, 1)
     assert_equal(20, @game.score)
   end
 
   def test_one_spare
-    set_up
     roll_spare
     @game.roll(3)
     roll_many(17, 0)
@@ -24,7 +20,6 @@ class RubyKataTest < Minitest::Test
   end
 
   def test_one_strike
-    set_up
     roll_strike
     @game.roll(3)
     @game.roll(4)
@@ -33,7 +28,6 @@ class RubyKataTest < Minitest::Test
   end
 
   def test_perfect_game
-    set_up
     roll_many(12, 10)
     assert_equal(300, @game.score)
   end
@@ -46,7 +40,7 @@ class RubyKataTest < Minitest::Test
     end
   end
 
-  def set_up
+  def setup
     @game = RubyKata.new
   end
 
