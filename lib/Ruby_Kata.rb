@@ -26,13 +26,15 @@ class RubyKata
       frame_index += 2
         end
     end
-    return score
+    score
   end
 
   private
+
   def is_strike(frame_index)
     @rolls[frame_index] == 10
   end
+
   def sum_balls_in_frame(frame_index)
     @rolls[frame_index] + @rolls[frame_index + 1]
   end
@@ -48,4 +50,5 @@ class RubyKata
   def is_spare(frame_index)
     @rolls[frame_index] + @rolls[frame_index + 1] == 10
   end
+
 end
